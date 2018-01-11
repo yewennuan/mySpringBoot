@@ -6,6 +6,8 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @author wennan
  * 1. java -jar xxx.jar --name="Spring"
@@ -34,6 +36,7 @@ public class ProfileDemo implements ApplicationListener<ContextRefreshedEvent> {
 
     @Value("${my.servers[1]}")
     private String server2;
+
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {

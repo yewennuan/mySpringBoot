@@ -5,7 +5,6 @@
 # person.first-name
 # person.first_name
 # PERSON_FIRST_NAME
-
 name: wennan
 random: ${random.value}
 copy: ${name}
@@ -13,6 +12,7 @@ my:
   servers:
     - dev.bar.com
     - foo.bar.com
+  age: 2
 
 debug: false
 trace: false
@@ -20,6 +20,13 @@ spring:
   output:
     ansi:
       enabled: always
+  mvc:
+    message-codes-resolver-format: prefix_error_code
+
+
+
+#server:
+#  context-path: /mySpringBoot
 
 
 
