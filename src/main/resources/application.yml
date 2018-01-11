@@ -1,0 +1,37 @@
+
+# yml文件不能使用@PropertySource加载属性
+# @ConfigurationProperties 支持relaxed 绑定，@Value是不支持relaxed 绑定的
+# person.firstName
+# person.first-name
+# person.first_name
+# PERSON_FIRST_NAME
+
+name: wennan
+random: ${random.value}
+copy: ${name}
+my:
+  servers:
+    - dev.bar.com
+    - foo.bar.com
+
+debug: false
+trace: false
+spring:
+  output:
+    ansi:
+      enabled: always
+
+
+
+
+
+
+ #file 和path只能选一个
+#logging:
+ # file: my.log 写到特定的日志文件，名称可以是精确的位置或相对于当前目录
+ # path: /Users/johu/Desktop/spider 写到特定目录下的spring.log里，名称可以是精确的位置或相对于当前目录
+
+
+
+
+

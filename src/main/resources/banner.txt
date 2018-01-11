@@ -1,7 +1,6 @@
-- - - - -
-1 1 1 1 1
-- - - - -
-${application.version}
-${application.formatted-version}
-${application.title}
+
+    =v= =v= =v=
+wennan-custom-banner
+    =3= =3= =3=
 ${spring-boot.formatted-version}
+

@@ -1,0 +1,10 @@
+
+org.springframework.context.ApplicationListener=\
+  com.johu.mySpringBoot.ref1_4_1.doc23.SpringApplicationEvent.ApplicationEnvironmentPreparedEventDemo,\
+  com.johu.mySpringBoot.ref1_4_1.doc23.SpringApplicationEvent.ApplicationFailedEventDemo,\
+  com.johu.mySpringBoot.ref1_4_1.doc23.SpringApplicationEvent.ApplicationPreparedEventDemo,\
+  com.johu.mySpringBoot.ref1_4_1.doc23.SpringApplicationEvent.ApplicationStartedEventDemo,\
+  com.johu.mySpringBoot.ref1_4_1.doc23.ApplicationContextEvent.ContextClosedEventDemo
+
+
+
