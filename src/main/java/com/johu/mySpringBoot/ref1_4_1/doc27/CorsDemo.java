@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author wennan
  * 2018/1/11
+ * 跨域可开两个项目，在application.yml里 通过server.port属性将端口设成9000起个工程，再改为8080再起一个工程，
+ * 不同端口也是算跨域的，所以能进行跨域的demo演示
  */
 
 //@CrossOrigin it don;t work why?
