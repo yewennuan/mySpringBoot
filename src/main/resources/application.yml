@@ -22,7 +22,8 @@ spring:
       enabled: always
   mvc:
     message-codes-resolver-format: prefix_error_code
-
+#server:
+#  port: 8080
 
 
 #server:

@@ -15,6 +15,8 @@ public class MySpringBootApplication {
 
 	public static void main(String[] args) {
 
+		MySpringBootApplication mySpringBootApplication = new MySpringBootApplication();
+
 		SpringApplication springApplication = new SpringApplication(MySpringBootApplication.class);
 
 		//可在这里配置，也可以在 spring.factories里配置，

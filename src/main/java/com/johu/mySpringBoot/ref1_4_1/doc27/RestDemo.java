@@ -13,10 +13,7 @@ import com.fasterxml.jackson.databind.util.BeanUtil;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.jackson.JsonComponent;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.Max;
 import java.io.IOException;
@@ -39,6 +36,12 @@ public class RestDemo {
         userEntity.setId(user);
         userEntity.setName("johu");
         return userEntity;
+    }
+
+    @RequestMapping(value="/str", method= RequestMethod.GET)
+    @GetMapping
+    public String getStr() {
+        return "str";
     }
 
     @RequestMapping(value="/error", method= RequestMethod.GET)
