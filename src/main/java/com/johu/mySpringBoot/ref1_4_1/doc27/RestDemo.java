@@ -39,9 +39,18 @@ public class RestDemo {
     }
 
     @RequestMapping(value="/str", method= RequestMethod.GET)
-    @GetMapping
     public String getStr() {
         return "str";
+    }
+
+
+    /**
+     * @RestController只会返回字符串的，想要跳到index.html 需要用@Controller
+     * @return
+     */
+    @RequestMapping(value="", method= RequestMethod.GET)
+    public String index() {
+        return "index.html";
     }
 
     @RequestMapping(value="/error", method= RequestMethod.GET)
